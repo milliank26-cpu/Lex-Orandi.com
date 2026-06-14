@@ -1,0 +1,472 @@
+/* ==========================================================================
+   1. CORE VARIABLES & BASE STYLES
+   ========================================================================== */
+:root {
+  --color-primary: #800020;        /* Burgundy */
+  --color-secondary: #daa520;      /* Liturgical Gold */
+  --color-bg: #fcfcf9;             /* Soft Cream Parchment */
+  --color-text: #2c2c2c;           /* Soft Slate Black */
+  --color-text-light: #5a5a5a;     /* Muted Text */
+  --color-card-bg: #ffffff;        /* Pure White for Contrast */
+  --color-alert-bg: #fff9e6;       /* Soft Yellow for Warnings */
+  --color-border: #e0dad0;         /* Muted Earthy Border */
+  
+  --font-serif: "Cinzel", "Georgia", serif;
+  --font-sans: "Playfair Display", "Helvetica Neue", sans-serif;
+  
+  --header-height: 70px;
+  --sidebar-width: 280px;
+  --max-width: 1400px;
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ==========================================================================
+   2. STICKY TOP NAVIGATION BAR
+   ========================================================================== */
+.main-nav {
+  background-color: var(--color-card-bg);
+  border-bottom: 3px solid var(--color-primary);
+  height: var(--header-height);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.nav-logo img {
+  height: 45px;
+  margin-right: 0.75rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: color var(--transition-speed) ease;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-secondary);
+  transition: width var(--transition-speed) ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* ==========================================================================
+   3. STRUCTURAL TWO-COLUMN GRID
+   ========================================================================== */
+.app-container {
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: calc(100vh - var(--header-height));
+}
+
+/* Sticky Left Sidebar */
+.sidebar {
+  background-color: var(--color-card-bg);
+  border-right: 1px solid var(--color-border);
+  position: sticky;
+  top: var(--header-height);
+  height: calc(100vh - var(--header-height));
+  overflow-y: auto;
+  padding: 2rem;
+}
+
+.sidebar-menu {
+  list-style: none;
+}
+
+.sidebar-item {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--color-text-light);
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all var(--transition-speed) ease;
+}
+
+.sidebar-link:hover {
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+}
+
+.sidebar-link.active {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Right-Side Scrollable Main Content */
+.main-content {
+  padding: 3rem 4rem;
+  background-color: var(--color-bg);
+}
+
+/* Typography Templates */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+}
+
+h1 { font-size: 2.5rem; border-bottom: 2px solid var(--color-border); padding-bottom: 0.5rem; }
+h2 { font-size: 1.85rem; margin-top: 2rem; }
+h3 { font-size: 1.4rem; }
+
+/* ==========================================================================
+   4. CONTENT MODULE PLACEHOLDERS
+   ========================================================================== */
+
+/* Standard Text Box */
+.text-box {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.text-box p {
+  margin-bottom: 1rem;
+}
+.text-box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Step-by-Step Ordered List */
+.instruction-list {
+  list-style: none;
+  counter-reset: lit-counter;
+  margin-bottom: 2rem;
+}
+
+.instruction-list li {
+  counter-increment: lit-counter;
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 1.25rem;
+  background-color: var(--color-card-bg);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
+.instruction-list li::before {
+  content: counter(lit-counter);
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: bold;
+  font-size: 0.9rem;
+  border: 2px solid var(--color-secondary);
+}
+
+/* Left-Bordered Church Citation Block (GIRM/CCC) */
+.church-citation {
+  border-left: 4px solid var(--color-primary);
+  background-color: var(--color-card-bg);
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  font-style: italic;
+  position: relative;
+}
+
+.church-citation::before {
+  content: "“";
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  color: var(--color-border);
+  position: absolute;
+  top: -1rem;
+  left: 0.5rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.citation-source {
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: var(--color-secondary);
+  margin-top: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+/* Highlighted Attention Alert Box */
+.attention-box {
+  background-color: var(--color-alert-bg);
+  border: 1px solid var(--color-secondary);
+  border-left: 5px solid var(--color-secondary);
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.attention-icon {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.attention-content h4 {
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+/* Side-by-Side Comparative Flex Cards */
+.comparison-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.comparison-card {
+  flex: 1;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-border);
+  border-radius: 6px;
+  padding: 1.5rem;
+  transition: transform var(--transition-speed) ease;
+}
+
+.comparison-card.card-allowed {
+  border-top-color: #2e7d32; /* Liturgical Green / Positive Context */
+}
+
+.comparison-card.card-prohibited {
+  border-top-color: var(--color-primary); /* Burgundy / Negative Context */
+}
+
+.comparison-card h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+}
+
+/* ==========================================================================
+   5. MULTIMEDIA CONTAINERS
+   ========================================================================== */
+
+/* Framed Responsive Image Box */
+.media-image-frame {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.media-image-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.media-caption {
+  font-family: var(--font-serif);
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-top: 0.75rem;
+  font-style: italic;
+}
+
+/* 16:9 Responsive Video Embed Container */
+.video-responsive-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000000;
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.video-responsive-wrap iframe,
+.video-responsive-wrap object,
+.video-responsive-wrap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ==========================================================================
+   6. FOOTER BASE
+   ========================================================================== */
+.main-footer {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  padding: 3rem 2rem;
+  margin-top: auto;
+  border-top: 4px solid var(--color-secondary);
+}
+
+.footer-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-tagline {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-metadata {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   7. RESPONSIVE MEDIA QUERIES
+   ========================================================================== */
+
+/* Tablet & Smaller Desktops */
+@media (max-width: 1024px) {
+  .app-container {
+    grid-template-columns: 1fr; /* Stack sidebar over content */
+  }
+  
+  .sidebar {
+    position: relative;
+    top: 0;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    padding: 1.5rem 2rem;
+  }
+  
+  .sidebar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .sidebar-item {
+    margin-bottom: 0;
+}
+.main-content {
+    padding: 2.5rem 2rem;
+}
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    .nav-menu {
+        gap: 1rem;
+    }
+    .nav-link {
+        font-size: 0.85rem;
+    }
+    .comparison-container {
+        flex-direction: column; /* Stack side-by-side cards */
+    }
+    h1 { 
+        font-size: 2rem; 
+    }
+    h2 { 
+        font-size: 1.5rem; 
+    }
+}
+
