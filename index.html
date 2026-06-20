@@ -1,166 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Catholic Compass - Liturgical Instruction Platform</title>
-  <!-- Google Fonts: Cinzel for Liturgical Serif, Playfair Display for Secondary Font -->
-  <link rel="preconnect" href="https://googleapis.com">
-  <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <!-- External Stylesheet -->
+  <title>Lex Orandi — Liturgical Instruction Platform</title>
+  <!-- External stylesheet linking per requirements -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- ==========================================================================
-     1. STICKY TOP NAVIGATION BAR
-     ========================================================================== -->
-  <nav class="main-nav">
+  <!-- Sticky Top Navigation Bar -->
+  <header class="main-header">
     <div class="nav-container">
-      <a href="#" class="nav-logo">
-        <!-- Universal Brand Logo Placeholder -->
-        <img src="https://placeholder.com" alt="The Catholic Compass Logo">
-        <span>The Catholic Compass</span>
-      </a>
-      <ul class="nav-menu">
-        <li><a href="#" class="nav-link active">Home</a></li>
-        <li><a href="#" class="nav-link">Sacraments</a></li>
-        <li><a href="#" class="nav-link">Liturgy</a></li>
-        <li><a href="#" class="nav-link">Resources</a></li>
-      </ul>
+      <div class="brand-logo">
+        <span class="logo-text">Lex Orandi</span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#" class="nav-link active">Dashboard</a>
+        <a href="#" class="nav-link">Formation Modules</a>
+        <a href="#" class="nav-link">Mass Guide</a>
+        <a href="#" class="nav-link">Institution Portal</a>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- ==========================================================================
-     2. STRUCTURAL TWO-COLUMN GRID CONTAINER
-     ========================================================================== -->
-  <div class="app-container">
+  <!-- Structural Layout Grid Container -->
+  <div class="app-layout">
 
-    <!-- Sticky Left Sidebar Navigation -->
-    <aside class="sidebar">
-      <ul class="sidebar-menu">
-        <li class="sidebar-item">
-          <a href="#" class="sidebar-link active">1. Overview & General Principles</a>
-        </li>
-        <li class="sidebar-item">
-          <a href="#" class="sidebar-link">2. Sanctuary Preparation</a>
-        </li>
-        <li class="sidebar-item">
-          <a href="#" class="sidebar-link">3. Liturgy of the Word</a>
-        </li>
-        <li class="sidebar-item">
-          <a href="#" class="sidebar-link">4. Liturgy of the Eucharist</a>
-        </li>
-        <li class="sidebar-item">
-          <a href="#" class="sidebar-link">5. Concluding Rites</a>
-        </li>
-      </ul>
+    <!-- Sticky Left Sidebar Navigation: Full 32-Chapter Outline -->
+    <aside class="sidebar-nav">
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Part I: Origin, Call, and Identity</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link">1. The Call to Serve</a></li>
+          <li><a href="#" class="sidebar-link">2. The Origin of Altar Serving</a></li>
+          <li><a href="#" class="sidebar-link">3. The Meaning of the Altar</a></li>
+          <li><a href="#" class="sidebar-link">4. Worship, Liturgy, & Tradition</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Part II: The Mystery of the Mass</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link">5. What is the Holy Mass?</a></li>
+          <li><a href="#" class="sidebar-link">6. Structure of the Holy Mass</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Part III: The Holy Mass (Step by Step)</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link">7. The Introductory Rites</a></li>
+          <li><a href="#" class="sidebar-link">8. The Liturgy of the Word</a></li>
+          <li><a href="#" class="sidebar-link">9. The Liturgy of the Eucharist</a></li>
+          <li><a href="#" class="sidebar-link">10. The Concluding Rites</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Part IV: The Altar Server in Action</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link active-link">11. The Sanctuary & Sacred Space</a></li>
+          <li><a href="#" class="sidebar-link">12. Duties Before Mass</a></li>
+          <li><a href="#" class="sidebar-link">13. Duties During Mass</a></li>
+          <li><a href="#" class="sidebar-link">14. Duties After Mass</a></li>
+          <li><a href="#" class="sidebar-link">15. Roles of Different Servers</a></li>
+          <li><a href="#" class="sidebar-link">16. The Priest and the Server</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Part V: The Language of the Liturgy</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link">17. Sacred Vessels & Meaning</a></li>
+          <li><a href="#" class="sidebar-link">18. Vestments & Symbolism</a></li>
+          <li><a href="#" class="sidebar-link">19. Gestures, Postures, & Silence</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Part VI: Formation of the Server</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link">20. Discipline and Conduct</a></li>
+          <li><a href="#" class="sidebar-link">21. Interior Disposition</a></li>
+          <li><a href="#" class="sidebar-link">22. Growth Through Mistakes</a></li>
+          <li><a href="#" class="sidebar-link">23. Handling Unexpected Situations</a></li>
+          <li><a href="#" class="sidebar-link">24. Spiritual Life of a Server</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Part VII: Service Beyond the Mass</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link">25. Eucharistic Adoration</a></li>
+          <li><a href="#" class="sidebar-link">26. Benediction of the Sacrament</a></li>
+          <li><a href="#" class="sidebar-link">27. Other Liturgical Celebrations</a></li>
+          <li><a href="#" class="sidebar-link">28. Liturgy and Devotion</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Part VIII: Deeper Understanding</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link">29. The Meaning Behind Every Action</a></li>
+          <li><a href="#" class="sidebar-link">30. Serving with Understanding</a></li>
+          <li><a href="#" class="sidebar-link">31. A Brief History of the Liturgy</a></li>
+          <li><a href="#" class="sidebar-link">32. Conclusion: More Than a Server</a></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="sidebar-title">Appendices</h3>
+        <ul class="sidebar-menu">
+          <li><a href="#" class="sidebar-link">Appendix A: Server Prayers</a></li>
+          <li><a href="#" class="sidebar-link">Appendix B: Practical Checklists</a></li>
+          <li><a href="#" class="sidebar-link">Appendix C: Institutional Training</a></li>
+        </ul>
+      </div>
+
     </aside>
 
     <!-- Right-Side Scrollable Main Content Panel -->
     <main class="main-content">
-      
-      <!-- Content Header -->
-      <header>
-        <h1>Liturgical Instruction Manual</h1>
-        <p>A comprehensive structural guide for Altar Servers, Lectors, and Extraordinary Ministers of Holy Communion across parish communities.</p>
-      </header>
 
-      <!-- ==========================================================================
-         3. CONTENT MODULE PLACEHOLDERS
-         ========================================================================== -->
-
-      <!-- Standard Text Box -->
-      <section class="text-box">
-        <h2>Introduction to Sacred Rubrics</h2>
-        <p>The ordering of the Holy Sacrifice of the Mass is guided by centuries of sacred tradition and the strict norms of the universal Church. Every movement, gesture, and vestment carries a profound theological reality meant to direct the soul toward the heavenly liturgy.</p>
-        <p>This instruction platform serves as a modern companion to traditional customaries, ensuring clarity, consistency, and deep reverence across all liturgical minister cohorts within the parish community.</p>
+      <!-- Standard Text Box Component -->
+      <section class="content-card text-box">
+        <h1 class="section-title">Chapter 11: The Sanctuary and Sacred Space</h1>
+        <p class="paragraph-text">
+          The sanctuary stands as the structural and spiritual heart of the church building. It is the unique, elevated
+          space where the mysteries of the Holy Mass unfold and where the primary liturgical ministers exercise their
+          holy office. Every server must understand that this space is set apart from the body of the nave to represent
+          the heavenly banquet layout, demanding intentional movement and supreme physical discipline.
+        </p>
       </section>
 
-      <!-- Left-Bordered Church Citation Block (GIRM/CCC Quotes) -->
-      <blockquote class="church-citation">
-        <p>The celebration of the Eucharist is the action of Christ himself and of the Church. In it, Christ the Lord, through the ministry of the priest, offers himself, substantially present under the species of bread and wine, to God the Father and gives himself as spiritual food to the faithful who are associated with his offering.</p>
-        <cite class="citation-source">General Instruction of the Roman Missal (GIRM), Paragraph 16</cite>
-      </blockquote>
-
-      <!-- Step-by-Step Ordered List -->
-      <section>
-        <h2>Sacristy and Altar Preparation Steps</h2>
-        <p>Before the celebration of Mass begins, the assigned altar servers must execute the following ceremonial checklist systematically:</p>
-        <ol class="instruction-list">
-          <li>
-            <strong>Vest Compartment Check:</strong> Arrive at least twenty minutes prior to the scheduled Mass, vest in a clean, properly sized cassock and surplice, and observe sacred silence.
+      <!-- Step-by-Step Ordered List Component -->
+      <section class="content-card process-box">
+        <h2 class="section-subtitle">Practical Altar Preparation Sequence</h2>
+        <ol class="step-list">
+          <li class="step-item">
+            <span class="step-number">1</span>
+            <div class="step-body">
+              <h4 class="step-heading">The Altar Cloth Check</h4>
+              <p class="step-desc">Ensure the white altar cloth is perfectly centered, smooth, and draped properly over
+                both edges before any vessels arrive.</p>
+            </div>
           </li>
-          <li>
-            <strong>Light the Altar Candles:</strong> Transfer flame reverently using the candle lighter, starting from the cross outwards. Light the Gospel side (left) first, followed by the Epistle side (right).
+          <li class="step-item">
+            <span class="step-number">2</span>
+            <div class="step-body">
+              <h4 class="step-heading">Arrangement of the Missal</h4>
+              <p class="step-desc">Place the Roman Missal on its stand on the left-hand (Epistle) side of the altar,
+                setting the ribbons according to the proper liturgical day.</p>
+            </div>
           </li>
-          <li>
-            <strong>Arrange the Sacred Vessels:</strong> Place the chalice, paten, purificator, pall, and corporal securely onto the credence table alongside the cruets of water and wine.
+          <li class="step-item">
+            <span class="step-number">3</span>
+            <div class="step-body">
+              <h4 class="step-heading">Credence Table Setout</h4>
+              <p class="step-desc">Arrange the chalice, paten, corporate, purificator, lavabo bowl, and water/wine
+                cruets neatly in their proper operational positions.</p>
+            </div>
           </li>
         </ol>
       </section>
 
-      <!-- Highlighted Attention Alert Box -->
-      <div class="attention-box">
-        <div class="attention-icon">⚠️</div>
-        <div class="attention-content">
-          <h4>Strict Liturgical Norm: Handling of Sacred Vessels</h4>
-          <p>Only ordained ministers (Bishops, Priests, Deacons) and instituted acolytes are permitted to purify the sacred vessels following Holy Communion. Altar servers must handle unpurified chalices with utmost care and only carry them to and from the credence table as explicitly authorized.</p>
+      <!-- Left-Bordered Church Citation Block Component -->
+      <blockquote class="citation-block" cite="General Instruction of the Roman Missal, n. 295">
+        <p class="citation-text">
+          "The sanctuary is the place where the altar stands, the Word of God is proclaimed, and the Priest, the Deacon,
+          and the other ministers exercise their functions. It should appropriately be distinguished from the body of
+          the church by means of a higher elevation or by a special structure and ornamentation."
+        </p>
+        <cite class="citation-source">General Instruction of the Roman Missal (GIRM), n. 295</cite>
+      </blockquote>
+
+      <!-- Highlighted Attention Alert Box Component -->
+
+
+      <div class="alert-box attention-alert">
+        <div class="alert-icon">⚠️</div>
+        <div class="alert-body">
+          <h4 class="alert-title">Strict Liturgical Rule</h4>
+          <p class="alert-desc">
+            <!-- Highlighted Attention Alert Box Component -->
+            Whenever moving across the sanctuary layout, if you cross the center axis directly in front of a tabernacle
+            containing the Reserved Sacrament, you must execute a formal, deep genuflection down to the right knee.
+          </p>
         </div>
       </div>
 
-      <!-- Side-by-Side Comparative Flex Cards -->
-      <section>
-        <h2>Reverent Postures During the Liturgy</h2>
-        <p>Maintaining clear, uniform postures throughout the sanctuary fosters visual beauty and interior focus. Compare the following specific instructions:</p>
-        <div class="comparison-container">
-          <!-- Positive/Allowed Action Card -->
-          <article class="comparison-card card-allowed">
-            <h4>Reverent Gestures</h4>
-            <p>Keep hands joined flat against the breast, palms touching, right thumb folded over the left in the form of a cross whenever moving without an object.</p>
-          </article>
-          <!-- Negative/Prohibited Action Card -->
-          <article class="comparison-card card-prohibited">
-            <h4>Prohibited Postures</h4>
-            <p>Avoid letting hands hang loosely at the sides, crossing arms across the chest, or looking around into the congregation during the liturgy.</p>
-          </article>
+      <!-- Side-by-Side Comparative Flex Cards Component -->
+      <section class="comparison-row">
+        <div class="compare-card">
+          <h4 class="compare-title">The Corporate Placement</h4>
+          <p class="compare-desc">
+            A square white linen cloth upon which the sacred vessels are placed during the Liturgy of the Eucharist. It
+            must be carefully unfolded in the center of the altar with standard left-to-right grid symmetry.
+          </p>
+        </div>
+        <div class="compare-card">
+          <h4 class="compare-title">The Purificator Handling</h4>
+          <p class="compare-desc">
+            A clean, narrow linen cloth used to wipe the chalice after Communion. It always rests directly over the
+            mouth of the chalice underneath the paten when setting the initial table configuration.
+          </p>
         </div>
       </section>
 
-      <!-- ==========================================================================
-         4. MULTIMEDIA CONTAINERS
-         ========================================================================== -->
-
-      <!-- Framed Responsive Image Box -->
-      <figure class="media-image-frame">
-        <img src="https://placeholder.com" alt="Correct layout of sacred vessels on the corporal">
-        <figcaption class="media-caption">Figure 1.1: Precise visual layout of the Corporal, Chalice, and Paten on the Altar during preparation.</figcaption>
+      <!-- Multimedia Containers: Responsive Image Box -->
+      <figure class="media-container image-frame">
+        <div class="image-wrapper">
+          <img src="https://placeholder.com"
+            alt="Canonical layout tracking the spatial separation between the Sanctuary boundary and the assembly seating">
+        </div>
+        <figcaption class="media-caption">Figure 11.1: Canonical layout tracking the spatial separation between the
+          Sanctuary boundary and the assembly seating.</figcaption>
       </figure>
 
-      <!-- 16:9 Responsive Video Embed Container -->
-      <section>
-        <h2>Video Tutorial: The Order of the Processional</h2>
-        <div class="video-responsive-wrap">
-          <iframe src="https://youtube.com" title="Liturgical Procession Walkthrough Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- Multimedia Containers: 16:9 Responsive Video Embed Container -->
+      <div class="media-container video-frame">
+        <div class="video-ratio-wrapper">
+          <iframe src="https://youtube.com" title="Liturgical Video Instruction"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
-      </section>
+        <span class="video-caption">Instructional Video: Postures, Gestures, and Spatial Awareness in the
+          Sanctuary</span>
+      </div>
 
+      <!-- Centered Footer Structural Base -->
+      <footer class="main-footer">
+        <div class="footer-content">
+          <p class="tagline">Ad Maiorem Dei Gloriam</p>
+          <p class="metadata">&copy; 2026 Lex Orandi Platform. All Right Reserved </p>
+          <p class="metadata">Formed for Liturgical Ministry.</p>
+        </div>
+      </footer>
     </main>
   </div>
-
-  <!-- ==========================================================================
-     5. FOOTER BASE
-     ========================================================================== -->
-  <footer class="main-footer">
-    <div class="footer-container">
-      <div class="footer-tagline">Ad Maiorem Dei Gloriam</div>
-      <div class="footer-metadata">
-        <p>&copy; 2026 The Catholic Compass. All Rights Reserved.</p>
-        <p>Global Liturgical Instruction Platform &bull; Built for Parish Ministry Formations</p>
-      </div>
-    </div>
-  </footer>
-
 </body>
-</html>
