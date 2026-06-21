@@ -1,262 +1,347 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lex Orandi — Liturgical Instruction Platform</title>
+    <!-- Google Fonts: Cinzel for Liturgical Serif, Playfair Display for Secondary Font -->
+    <link rel="preconnect" href="https://googleapis.com" />
+    <link rel="preconnect" href="https://gstatic.com" crossorigin />
+    <link
+      href="https://googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lex Orandi — Liturgical Instruction Platform</title>
-  <!-- Google Fonts: Cinzel for Liturgical Serif, Playfair Display for Secondary Font -->
-  <link rel="preconnect" href="https://googleapis.com">
-  <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <!-- Sticky Top Navigation Bar -->
-  <header class="main-header">
-    <div class="nav-container">
-      <div class="brand-logo">
-        <span class="logo-text">Lex Orandi</span>
-      </div>
-      <nav class="nav-menu">
-        <a href="#" class="nav-link active">Dashboard</a>
-        <a href="#" class="nav-link">Formation Modules</a>
-        <a href="#" class="nav-link">Mass Guide</a>
-        <a href="#" class="nav-link">Institution Portal</a>
-      </nav>
-      <a href="#" class="nav-logo">
-        <!-- Universal Brand Logo Placeholder -->
-        <img src="https://placeholder.com" alt="Lex Orandi Logo">
-        <span>Lex Orandi</span>
-      </a>
-      <ul class="nav-menu">
-        <li><a href="#" class="nav-link active">Home</a></li>
-        <li><a href="#" class="nav-link">Sacraments</a></li>
-        <li><a href="#" class="nav-link">Liturgy</a></li>
-        <li><a href="#" class="nav-link">Resources</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <!-- Structural Layout Grid Container -->
-  <div class="app-layout">
-
-    <!-- Sticky Left Sidebar Navigation: Full 32-Chapter Outline -->
-    <aside class="sidebar-nav">
-
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Part I: Origin, Call, and Identity</h3>
-        <ul class="sidebar-menu">
-          <li><a href="#" class="sidebar-link">1. The Call to Serve</a></li>
-          <li><a href="#" class="sidebar-link">2. The Origin of Altar Serving</a></li>
-          <li><a href="#" class="sidebar-link">3. The Meaning of the Altar</a></li>
-          <li><a href="#" class="sidebar-link">4. Worship, Liturgy, & Tradition</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Part II: The Mystery of the Mass</h3>
-        <ul class="sidebar-menu">
-          <li><a href="#" class="sidebar-link">5. What is the Holy Mass?</a></li>
-          <li><a href="#" class="sidebar-link">6. Structure of the Holy Mass</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Part III: The Holy Mass (Step by Step)</h3>
-        <ul class="sidebar-menu">
-          <li><a href="#" class="sidebar-link">7. The Introductory Rites</a></li>
-          <li><a href="#" class="sidebar-link">8. The Liturgy of the Word</a></li>
-          <li><a href="#" class="sidebar-link">9. The Liturgy of the Eucharist</a></li>
-          <li><a href="#" class="sidebar-link">10. The Concluding Rites</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Part IV: The Altar Server in Action</h3>
-        <ul class="sidebar-menu">
-          <li><a href="#" class="sidebar-link active-link">11. The Sanctuary & Sacred Space</a></li>
-          <li><a href="#" class="sidebar-link">12. Duties Before Mass</a></li>
-          <li><a href="#" class="sidebar-link">13. Duties During Mass</a></li>
-          <li><a href="#" class="sidebar-link">14. Duties After Mass</a></li>
-          <li><a href="#" class="sidebar-link">15. Roles of Different Servers</a></li>
-          <li><a href="#" class="sidebar-link">16. The Priest and the Server</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Part V: The Language of the Liturgy</h3>
-        <ul class="sidebar-menu">
-          <li><a href="#" class="sidebar-link">17. Sacred Vessels & Meaning</a></li>
-          <li><a href="#" class="sidebar-link">18. Vestments & Symbolism</a></li>
-          <li><a href="#" class="sidebar-link">19. Gestures, Postures, & Silence</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Part VI: Formation of the Server</h3>
-        <ul class="sidebar-menu">
-          <li><a href="#" class="sidebar-link">20. Discipline and Conduct</a></li>
-          <li><a href="#" class="sidebar-link">21. Interior Disposition</a></li>
-          <li><a href="#" class="sidebar-link">22. Growth Through Mistakes</a></li>
-          <li><a href="#" class="sidebar-link">23. Handling Unexpected Situations</a></li>
-          <li><a href="#" class="sidebar-link">24. Spiritual Life of a Server</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Part VII: Service Beyond the Mass</h3>
-        <ul class="sidebar-menu">
-          <li><a href="#" class="sidebar-link">25. Eucharistic Adoration</a></li>
-          <li><a href="#" class="sidebar-link">26. Benediction of the Sacrament</a></li>
-          <li><a href="#" class="sidebar-link">27. Other Liturgical Celebrations</a></li>
-          <li><a href="#" class="sidebar-link">28. Liturgy and Devotion</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Part VIII: Deeper Understanding</h3>
-        <ul class="sidebar-menu">
-          <li><a href="#" class="sidebar-link">29. The Meaning Behind Every Action</a></li>
-          <li><a href="#" class="sidebar-link">30. Serving with Understanding</a></li>
-          <li><a href="#" class="sidebar-link">31. A Brief History of the Liturgy</a></li>
-          <li><a href="#" class="sidebar-link">32. Conclusion: More Than a Server</a></li>
-        </ul>
-      </div>
-
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Appendices</h3>
-        <ul class="sidebar-menu">
-          <li><a href="#" class="sidebar-link">Appendix A: Server Prayers</a></li>
-          <li><a href="#" class="sidebar-link">Appendix B: Practical Checklists</a></li>
-          <li><a href="#" class="sidebar-link">Appendix C: Institutional Training</a></li>
-        </ul>
-      </div>
-
-    </aside>
-
-    <!-- Right-Side Scrollable Main Content Panel -->
-    <main class="main-content">
-
-      <!-- Standard Text Box Component -->
-      <section class="content-card text-box">
-        <h1 class="section-title">Chapter 11: The Sanctuary and Sacred Space</h1>
-        <p class="paragraph-text">
-          The sanctuary stands as the structural and spiritual heart of the church building. It is the unique, elevated
-          space where the mysteries of the Holy Mass unfold and where the primary liturgical ministers exercise their
-          holy office. Every server must understand that this space is set apart from the body of the nave to represent
-          the heavenly banquet layout, demanding intentional movement and supreme physical discipline.
-        </p>
-      </section>
-
-      <!-- Step-by-Step Ordered List Component -->
-      <section class="content-card process-box">
-        <h2 class="section-subtitle">Practical Altar Preparation Sequence</h2>
-        <ol class="step-list">
-          <li class="step-item">
-            <span class="step-number">1</span>
-            <div class="step-body">
-              <h4 class="step-heading">The Altar Cloth Check</h4>
-              <p class="step-desc">Ensure the white altar cloth is perfectly centered, smooth, and draped properly over
-                both edges before any vessels arrive.</p>
-            </div>
-          </li>
-          <li class="step-item">
-            <span class="step-number">2</span>
-            <div class="step-body">
-              <h4 class="step-heading">Arrangement of the Missal</h4>
-              <p class="step-desc">Place the Roman Missal on its stand on the left-hand (Epistle) side of the altar,
-                setting the ribbons according to the proper liturgical day.</p>
-            </div>
-          </li>
-          <li class="step-item">
-            <span class="step-number">3</span>
-            <div class="step-body">
-              <h4 class="step-heading">Credence Table Setout</h4>
-              <p class="step-desc">Arrange the chalice, paten, corporate, purificator, lavabo bowl, and water/wine
-                cruets neatly in their proper operational positions.</p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <!-- Left-Bordered Church Citation Block Component -->
-      <blockquote class="citation-block" cite="General Instruction of the Roman Missal, n. 295">
-        <p class="citation-text">
-          "The sanctuary is the place where the altar stands, the Word of God is proclaimed, and the Priest, the Deacon,
-          and the other ministers exercise their functions. It should appropriately be distinguished from the body of
-          the church by means of a higher elevation or by a special structure and ornamentation."
-        </p>
-        <cite class="citation-source">General Instruction of the Roman Missal (GIRM), n. 295</cite>
-      </blockquote>
-
-      <!-- Highlighted Attention Alert Box Component -->
-
-
-      <div class="alert-box attention-alert">
-        <div class="alert-icon">⚠️</div>
-        <div class="alert-body">
-          <h4 class="alert-title">Strict Liturgical Rule</h4>
-          <p class="alert-desc">
-            <!-- Highlighted Attention Alert Box Component -->
-            Whenever moving across the sanctuary layout, if you cross the center axis directly in front of a tabernacle
-            containing the Reserved Sacrament, you must execute a formal, deep genuflection down to the right knee.
-          </p>
+  <body>
+    <!-- Sticky Top Navigation Bar -->
+    <header class="main-header">
+      <div class="nav-container">
+        <div class="brand-logo">
+          <span class="logo-text">Lex Orandi</span>
         </div>
+        <nav class="nav-menu">
+          <a href="#" class="nav-link active">Dashboard</a>
+          <a href="#" class="nav-link">Formation Modules</a>
+          <a href="#" class="nav-link">Mass Guide</a>
+          <a href="#" class="nav-link">Institution Portal</a>
+        </nav>
+        <a href="#" class="nav-logo">
+          <!-- Universal Brand Logo Placeholder -->
+          <img src="https://placeholder.com" alt="Lex Orandi Logo" />
+          <span>Lex Orandi</span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#" class="nav-link">Sacraments</a></li>
+          <li><a href="#" class="nav-link">Liturgy</a></li>
+          <li><a href="#" class="nav-link">Resources</a></li>
+        </ul>
       </div>
+    </header>
 
-      <!-- Side-by-Side Comparative Flex Cards Component -->
-      <section class="comparison-row">
-        <div class="compare-card">
-          <h4 class="compare-title">The Corporate Placement</h4>
-          <p class="compare-desc">
-            A square white linen cloth upon which the sacred vessels are placed during the Liturgy of the Eucharist. It
-            must be carefully unfolded in the center of the altar with standard left-to-right grid symmetry.
-          </p>
+    <!-- Structural Layout Grid Container -->
+    <div class="app-layout">
+      <!-- Sticky Left Sidebar Navigation: Full 32-Chapter Outline -->
+      <aside class="sidebar-nav">
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Part I: Origin, Call, and Identity</h3>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="chapters/ch1.html" class="sidebar-link" data-slug="ch1"
+                >1. The Call to Serve</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch2.html" class="sidebar-link" data-slug="ch2"
+                >2. The Origin of Altar Serving</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch3.html" class="sidebar-link" data-slug="ch3"
+                >3. The Meaning of the Altar</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch4.html" class="sidebar-link" data-slug="ch4"
+                >4. Worship, Liturgy, & Tradition</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="compare-card">
-          <h4 class="compare-title">The Purificator Handling</h4>
-          <p class="compare-desc">
-            A clean, narrow linen cloth used to wipe the chalice after Communion. It always rests directly over the
-            mouth of the chalice underneath the paten when setting the initial table configuration.
-          </p>
-        </div>
-      </section>
 
-      <!-- Multimedia Containers: Responsive Image Box -->
-      <figure class="media-container image-frame">
-        <div class="image-wrapper">
-          <img src="https://placeholder.com"
-            alt="Canonical layout tracking the spatial separation between the Sanctuary boundary and the assembly seating">
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Part II: The Mystery of the Mass</h3>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="chapters/ch5.html" class="sidebar-link" data-slug="ch5"
+                >5. What is the Holy Mass?</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch6.html" class="sidebar-link" data-slug="ch6"
+                >6. Structure of the Holy Mass</a
+              >
+            </li>
+          </ul>
         </div>
-        <figcaption class="media-caption">Figure 11.1: Canonical layout tracking the spatial separation between the
-          Sanctuary boundary and the assembly seating.</figcaption>
-      </figure>
 
-      <!-- Multimedia Containers: 16:9 Responsive Video Embed Container -->
-      <div class="media-container video-frame">
-        <div class="video-ratio-wrapper">
-          <iframe src="https://youtube.com" title="Liturgical Video Instruction"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Part III: The Holy Mass (Step by Step)</h3>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="chapters/ch7.html" class="sidebar-link" data-slug="ch7"
+                >7. The Introductory Rites</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch8.html" class="sidebar-link" data-slug="ch8"
+                >8. The Liturgy of the Word</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch9.html" class="sidebar-link" data-slug="ch9"
+                >9. The Liturgy of the Eucharist</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch10.html" class="sidebar-link" data-slug="ch10"
+                >10. The Concluding Rites</a
+              >
+            </li>
+          </ul>
         </div>
-        <span class="video-caption">Instructional Video: Postures, Gestures, and Spatial Awareness in the
-          Sanctuary</span>
-      </div>
 
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Part IV: The Altar Server in Action</h3>
+          <ul class="sidebar-menu">
+            <li>
+              <a
+                href="chapters/ch11.html"
+                class="sidebar-link active-link"
+                data-slug="ch11"
+                >11. The Sanctuary & Sacred Space</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch12.html" class="sidebar-link" data-slug="ch12"
+                >12. Duties Before Mass</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch13.html" class="sidebar-link" data-slug="ch13"
+                >13. Duties During Mass</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch14.html" class="sidebar-link" data-slug="ch14"
+                >14. Duties After Mass</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch15.html" class="sidebar-link" data-slug="ch15"
+                >15. Roles of Different Servers</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch16.html" class="sidebar-link" data-slug="ch16"
+                >16. The Priest and the Server</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Part V: The Language of the Liturgy</h3>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="chapters/ch17.html" class="sidebar-link" data-slug="ch17"
+                >17. Sacred Vessels & Meaning</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch18.html" class="sidebar-link" data-slug="ch18"
+                >18. Vestments & Symbolism</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch19.html" class="sidebar-link" data-slug="ch19"
+                >19. Gestures, Postures, & Silence</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Part VI: Formation of the Server</h3>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="chapters/ch20.html" class="sidebar-link" data-slug="ch20"
+                >20. Discipline and Conduct</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch21.html" class="sidebar-link" data-slug="ch21"
+                >21. Interior Disposition</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch22.html" class="sidebar-link" data-slug="ch22"
+                >22. Growth Through Mistakes</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch23.html" class="sidebar-link" data-slug="ch23"
+                >23. Handling Unexpected Situations</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch24.html" class="sidebar-link" data-slug="ch24"
+                >24. Spiritual Life of a Server</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Part VII: Service Beyond the Mass</h3>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="chapters/ch25.html" class="sidebar-link" data-slug="ch25"
+                >25. Eucharistic Adoration</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch26.html" class="sidebar-link" data-slug="ch26"
+                >26. Benediction of the Sacrament</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch27.html" class="sidebar-link" data-slug="ch27"
+                >27. Other Liturgical Celebrations</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch28.html" class="sidebar-link" data-slug="ch28"
+                >28. Liturgy and Devotion</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Part VIII: Deeper Understanding</h3>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="chapters/ch29.html" class="sidebar-link" data-slug="ch29"
+                >29. The Meaning Behind Every Action</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch30.html" class="sidebar-link" data-slug="ch30"
+                >30. Serving with Understanding</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch31.html" class="sidebar-link" data-slug="ch31"
+                >31. A Brief History of the Liturgy</a
+              >
+            </li>
+            <li>
+              <a href="chapters/ch32.html" class="sidebar-link" data-slug="ch32"
+                >32. Conclusion: More Than a Server</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar-section">
+          <h3 class="sidebar-title">Appendices</h3>
+          <ul class="sidebar-menu">
+            <li>
+              <a
+                href="chapters/appendixA.html"
+                class="sidebar-link"
+                data-slug="appendixA"
+                >Appendix A: Server Prayers</a
+              >
+            </li>
+            <li>
+              <a
+                href="chapters/appendixB.html"
+                class="sidebar-link"
+                data-slug="appendixB"
+                >Appendix B: Practical Checklists</a
+              >
+            </li>
+            <li>
+              <a
+                href="chapters/appendixC.html"
+                class="sidebar-link"
+                data-slug="appendixC"
+                >Appendix C: Institutional Training</a
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Right-Side Scrollable Main Content Panel -->
+      <main class="main-content" id="content-display"></main>
       <!-- Centered Footer Structural Base -->
-      <footer class="main-footer">
-        <div class="footer-content">
-          <p class="tagline">Ad Maiorem Dei Gloriam</p>
-          <p class="metadata">&copy; 2026 Lex Orandi Platform. All Right Reserved </p>
-          <p class="metadata">Formed for Liturgical Ministry.</p>
-        </div>
-      </footer>
-    </main>
-  </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const mainContent = document.getElementById("content-display");
+        const links = document.querySelectorAll(".sidebar-link");
 
-</body>
+        // Reusable core fetch engine
+        async function loadChapter(url, slug) {
+          try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error("Chapter not found.");
+
+            // Inject the clean HTML fragment directly into the display grid
+            const htmlData = await response.text();
+            mainContent.innerHTML = htmlData;
+
+            // Ensure layout view instantly resets cleanly to top
+            mainContent.scrollTop = 0;
+
+            // Highlight the active link visually
+            links.forEach((l) => l.classList.remove("active-link"));
+            const activeLink = document.querySelector(`[data-slug="${slug}"]`);
+            if (activeLink) activeLink.classList.add("active-link");
+
+            // URL update so users can easily bookmark individual chapters
+            history.pushState({ slug }, "", `?chapter=${slug}`);
+          } catch (error) {
+            mainContent.innerHTML = `<div class="alert-box attention-alert">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-body">
+                    <h4 class="alert-title">System Error</h4>
+                    <p class="alert-desc">Unable to load the requested liturgical file.</p>
+                </div>
+            </div>`;
+          }
+        }
+
+        // Intercept clicks on the sidebar items
+        links.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            e.preventDefault();
+            const url = link.getAttribute("href");
+            const slug = link.getAttribute("data-slug");
+            loadChapter(url, slug);
+          });
+        });
+
+        // Deep-linking fallback: Check URL parameters on page refresh
+        const urlParams = new URLSearchParams(window.location.search);
+        const initialSlug = urlParams.get("chapter") || "ch11"; // Set your default homepage lesson
+        loadChapter(`chapters/${initialSlug}.html`, initialSlug);
+      });
+    </script>
+  </body>
 </html>
-

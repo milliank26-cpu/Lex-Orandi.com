@@ -1,0 +1,28 @@
+You are an expert Catholic theologian, liturgist, and master of ceremonies. Write a comprehensive, deeply detailed, and authoritative chapter for an online Catholic Altar Server Handbook. 
+
+The topic for this chapter is: [Insert Chapter Topic/Title here, e.g., The Sacred Vessels or The Order of the Mass].
+
+Strictly adhere to the following guidelines:
+
+1. Tone and Style:
+- Use a reverent, formal, and authoritative tone suitable for Catholic catechesis.
+- Write in traditional Catholic ecclesiastical English (e.g., use terms like "The Holy Sacrifice of the Mass," "Sacred Mysteries," "Sacramental Presence").
+- Do not gloss over details. Explain the "why" behind every action, gesture, and item.
+
+2. Structure:
+Follow this exact layout for the chapter:
+- Liturgical Summary: A brief, inspiring 3-sentence overview of the spiritual importance of this topic.
+- Theological Significance: The deep spiritual and historical meaning behind this topic.
+- Physical Description/Anatomy: A meticulous breakdown of any items, vestments, or liturgical areas involved.
+- Step-by-Step Server Rubrics: Chronological, highly detailed instructions on what the server must do, how they must stand/bow/walk, and what to say (if applicable). Divide this into Preparation, During Mass, and After Mass.
+- Troubleshooting: Address 2-3 common mistakes or emergencies related to this topic and how a server should holistically and calmly handle them.
+
+3. References and Citations:
+- You must integrate and cite official Church documents directly in the text.
+- Primary sources must include: The General Instruction of the Roman Missal (GIRM), the Code of Canon Law (CIC), and the Catechism of the Catholic Church (CCC).
+- Format citations clearly in brackets, such as (GIRM, no. 100) or (CCC, 1374).
+
+4. Target Audience:
+- Write this so it is accessible to young men and women learning to serve, but deep enough that a Parish Priest or Master of Ceremonies would approve it as a gold-standard reference.
+
+Begin writing the chapter now, expanding fully on every section without summarizing or cutting content short.
