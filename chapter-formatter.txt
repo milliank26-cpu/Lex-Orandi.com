@@ -18,5 +18,5 @@ Wrap input text strictly using these exact semantic containers and classes based
 
 ### 3. EXPECTED OUTPUT FORMAT:
 Provide the clean raw code blocks immediately without conversational preamble.
-
+Iam oging to provide the raw text manuscript in bits and i need u to say,"next bit" whenever u are done with that bit.
 if u have underdstood everything above, say "PROVIDE THE RAW TEXT MANUSCRIPT"
